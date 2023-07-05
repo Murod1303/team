@@ -1,0 +1,56 @@
+@use "../mixins" as m ;
+.hero {
+    padding-top: 100px;
+    padding-bottom: 259px;
+    color: #fff;
+}
+.hero__title-wrapper {
+    max-width: 478px;
+}
+.hero__title {
+    @include m.title (17px) ;
+    margin-top:0 ;
+    color: #fff;
+    font-size: 55px;
+}
+.hero__desc-wrapper {
+    max-width: 437px;
+    margin-bottom: 57px;
+}
+.hero__desc {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 146.2%;
+}
+.form__input {
+    display: inline-block;
+    max-width: 298px;
+    width: 100%;
+    margin-right: 10px;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 175.7%;
+}
+.form__input::placeholder {
+    color: #6d7d8b;;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 175.7%;
+}
+.form__btn {
+    display: inline-block;
+    width: 165px;
+    padding: 16px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    border-radius: 4px;
+    background: #0bcbff;
+}

@@ -1,0 +1,20 @@
+@use "../mixins" as m;
+.teamwork {
+    padding-top: 317px;
+    padding-bottom: 217px;
+    background-image: url(../../images/hubbg.png);
+    background-repeat: no-repeat;
+    background-position: top 143px right calc(50% - 690px);
+}
+.teamwork__content {
+    max-width: 467px;
+}
+.teamwork__title {
+    @include m.title (21px) ;
+}
+.teamwork__desc {
+    @include m.desc (40px) ;
+}
+.teamwork__link {
+    @include m.link ;
+}

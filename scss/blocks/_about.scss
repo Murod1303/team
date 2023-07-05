@@ -1,0 +1,67 @@
+@use "../mixins" as m;
+.about {
+    padding-top: 51px;
+    padding-bottom: 124px;
+}
+.about__title {
+    @include m.title (118px);
+    text-align: center;
+}
+.about__list {
+    @include m.flexbox (flex, stretch, null);
+    column-gap: 30px;
+}
+.about__item {
+    max-width: 367px;
+    padding: 56px 22px 40px 40px;
+    background-color: #fff;
+}
+.about__item::before {
+    @include m.before-after (120px, 24.6px , 24.6px) ;
+    background-image: url(../../images/stars.svg);
+}
+.about__item-inner {
+    width: 303px;
+}
+.about__item-desc {
+    @include m.desc (71px) ;
+    color: #213751b3;
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+}
+.about__item-person {
+    @include m.flexbox (flex, flex-end, null)
+}
+.about__item-person--first::before {
+    @include m.before-after (56px, 57.5px, null);
+    margin-right: 14px;
+    background-image: url(../../images/frist.png);
+}
+.about__item-person--second::before {
+    @include m.before-after (56px, 57.5px, null);
+    margin-right: 14px;
+    background-image: url(../../images/second.png);
+}
+.about__item-person--thrid::before {
+    @include m.before-after (56px, 57.5px, null);
+    margin-right: 14px;
+    background-image: url(../../images/thrid.png);
+}
+.about__item-person--four::before {
+    @include m.before-after (56px, 57.5px, null);
+    margin-right: 14px;
+    background-image: url(../../images/four.png);
+}
+.about__item-name{
+    @include m.desc (null);
+    display: block;
+    color: #25313c;;
+    font-size: 18px;
+    font-family: "Mulish", sans-serif;
+}
+.about__item-job {
+    color:  #213751b3;
+    font-size: 14px;
+    font-family: "Mulish" , sans-serif;
+    line-height: 150.6%;
+}

@@ -1,0 +1,23 @@
+@use "mixins" as m;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    height: 100%;
+}
+body {
+    @include m.sticky-footer ;
+    font-family: "Cabin", sans-serif;
+    background-color: #f5f7fa;
+}
+main {
+    flex-grow: 1;
+}
+img {
+    display: inline-block;
+    height: auto;
+}

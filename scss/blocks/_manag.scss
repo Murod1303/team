@@ -1,0 +1,21 @@
+@use "../mixins" as m;
+.manag {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.manag__content {
+    @include m.flexbox (flex, center, space-between) ;
+}
+.manag__text-wrapper {
+    max-width: 467px
+}
+.manag__title {
+    @include m.title (21px) ;
+}
+.manag__desc {
+    @include m.desc (40px) ;
+}
+.manag__content--second {
+    flex-direction: row-reverse;
+    margin-top: 150px;
+}
