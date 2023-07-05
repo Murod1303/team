@@ -38,5 +38,12 @@
     width:$width ;
     height:$heigth ;
     margin-bottom: $mb;
-
+    
+}
+@mixin footer-link {
+    color: #ffffff99;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.6%;
 }

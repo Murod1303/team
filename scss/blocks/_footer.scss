@@ -1,0 +1,68 @@
+@use "../mixins" as m;
+.site-footer {
+    padding-top: 58px;
+    padding-bottom: 28px;
+    background-color: #314051;
+}
+.site-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+.site-footer__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 156px;
+}
+.site-footer__log {
+    width: 142px;
+}
+.site-footer__log-des {
+    margin-top: 10px;
+    color: #ffffff99;
+    font-size: 14px;
+    line-height: 150.6%;
+}
+.site-footer__title {
+    display: block;
+    margin-bottom: 21px;
+    color: #fff ;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.site-footer__link {
+    @include m.footer-link ;
+}
+.site-footer__item:not(:last-child) {
+    margin-bottom: 4px;
+}
+.site-footer__span-text {
+    @include m.footer-link ;
+    display: block;
+    margin-bottom: 20px;
+}
+.form__input--footer {
+    width: 267px;
+    padding: 12px 11px 11px 16px;
+    border-radius: 4px;
+    background-color: #ffffff1a;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175.7%;
+    color: #ddd;
+}
+.form__input--footer::placeholder {
+    color: #ffffff80;
+}
+.site-footer__desc {
+    color: #ffffff33;
+    font-size: 14px;
+    font-family: "Mulish" , sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150.6%;
+}

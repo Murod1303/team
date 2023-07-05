@@ -1,7 +1,7 @@
 @use "../mixins" as m;
 .about {
     padding-top: 51px;
-    padding-bottom: 124px;
+    padding-bottom: 154px;
 }
 .about__title {
     @include m.title (118px);
@@ -15,6 +15,10 @@
     max-width: 367px;
     padding: 56px 22px 40px 40px;
     background-color: #fff;
+
+}
+.about__item:not(:last-child) {
+    margin-right: 30px;
 }
 .about__item::before {
     @include m.before-after (120px, 24.6px , 24.6px) ;
